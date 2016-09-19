@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>features/step_definitions/Application for Naturalization(N-400).rb</title>
+    <link href="./assets/0.2.3/screen.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="./assets/0.2.3/print.css" media="print" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="./assets/0.2.3/rcov.js"></script>
+  </head>
+  <body>
+    <h1>Myuscis pageobject vidyu C0 Coverage Information - Simploco - RCov</h1>
+    <h2>features/step_definitions/Application for Naturalization(N-400).rb</h2>
+
+    <div class="report_table_wrapper">
+      <table class='report' id='report_table'>
+        <thead>
+          <tr>
+            <th class="left_align">Name</th>
+            <th class="right_align">Total Lines</th>
+            <th class="right_align">Lines of Code</th>
+            <th class="left_align">Total Coverage</th>
+            <th class="left_align">Code Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left_align"><a href="features-step_definitions-Application for Naturalization(N-400)_rb.html">features/step_definitions/Application for Naturalization(N-400).rb</a></td>
+            <td class='right_align'><tt>71</tt></td>
+            <td class='right_align'><tt>49</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>81.69%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:82px"></div>
+        <div class="uncovered" style="width:18px"></div>
+      </div></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>73.47%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:73px"></div>
+        <div class="uncovered" style="width:27px"></div>
+      </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Key</h3>
+
+    <div class="key"><pre><span class='marked'>Code reported as executed by Ruby looks like this...</span><span class='marked1'>and this: this line is also marked as covered.</span><span class='inferred'>Lines considered as run by rcov, but not reported by Ruby, look like this,</span><span class='inferred1'>and this: these lines were inferred by rcov (using simple heuristics).</span><span class='uncovered'>Finally, here's a line marked as not executed.</span></pre></div>
+
+    <h3>Coverage Details</h3>
+
+    <table class="details">
+      <tbody>
+        <tr class="marked">
+          <td><pre><a name="line2">2</a> Given(/^A customer is logged into MyUSCIS and started filling in the N\-400 application$/) do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line3">3</a>   visit Continue_Application_page</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line4">4</a>   on(Continue_Application_page).continue_to_application</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line5">5</a>   on(Start_Application_page).start_your_application</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line6">6</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line7">7</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line8">8</a> When(/^he completes all the required information under &#39;Getting Started&#39; section$/) do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line9">9</a>   on(Eligibility_Information_page).next_button</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line10">10</a>   on(Preparer_Interpreter_page).rb_no</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line11">11</a>   on(Preparer_Interpreter_page).next_button</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line12">12</a>   on(YourName_Page).yourname_data_yml</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line13">13</a>   on(YourName_Page).rb_othername_no</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line14">14</a>   on(YourName_Page).rb_changename_no</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line15">15</a>   on(YourName_Page).next_button</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line16">16</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line17">17</a>   on(Your_Contact_Inforamtion).yourname_data_yml</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line18">18</a>   on(Your_Contact_Inforamtion).cb_daytimephone</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line19">19</a>   on(Your_Contact_Inforamtion).cb_eveningphone</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line20">20</a>   on(Your_Contact_Inforamtion).cb_workphone</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line21">21</a>   on(Your_Contact_Inforamtion).next_button</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line22">22</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line23">23</a>   on(When_were_you_born).yourname_data_yml</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line24">24</a>   on(When_were_you_born).dd_country_of_birth</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line25">25</a>   on(When_were_you_born).next_button</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line26">26</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line27">27</a>   on(Your_Immigration_Information).dd_country_of_nationality</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line28">28</a>   on(Your_Immigration_Information).yourname_data_yml</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line29">29</a>   on(Your_Immigration_Information).cb_green_card</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line30">30</a>   on(Your_Immigration_Information).next_button</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line31">31</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line32">32</a>   on(Your_Immigration_Information2).yourname_data_yml</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line33">33</a>   on(Your_Immigration_Information2).next_button</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line34">34</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line35">35</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line36">36</a> And(/^completes all the required information for &#39;Describe yourself&#39; and &#39;Where you have lived&#39; sub sections under &#39;About You&#39; section$/) do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line37">37</a>   on(Describe_yourself).rb_gender_female</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line38">38</a>   on(Describe_yourself).rb_ethnicity_hispanic_latino</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line39">39</a>   on(Describe_yourself).cb_white</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line40">40</a>   # on(Describe_yourself).dd_height_feet</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line41">41</a>   # on(Describe_yourself).dd_height_inches</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line42">42</a>   on(Describe_yourself).yourname_data_yml</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line43">43</a>   # on(Describe_yourself).dd_eyes_color</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line44">44</a>   # on(Describe_yourself).dd_hair_color</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line45">45</a>   on(Describe_yourself).next_button</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line46">46</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line47">47</a>   on(Where_you_have_lived).yourname_data_yml</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line48">48</a>   on(Where_you_have_lived).next_button</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line49">49</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line50">50</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line51">51</a> And(/^completes all the required information under &#39;Review&amp;Submit&#39; section$/) do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line52">52</a>   on(Review_your_application).review_and_submit</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line53">53</a>   on(Review_your_application).review_my_application</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line54">54</a>   on(Review_your_application).continue_to_view_all_my_responses</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line55">55</a> </pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line56">56</a>   on(Your_signature).cb_applicant_statement</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line57">57</a>   on(Your_signature).next_button</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line58">58</a> </pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line59">59</a>   on(Applicant_Signature).yourname_data_yml</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line60">60</a>   on(Applicant_Signature).next_button</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line61">61</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line62">62</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line63">63</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line64">64</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line65">65</a> Then(/^he should be able to successfully click on &#39;Pay and submit&#39; button to submit the application$/) do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line66">66</a>   on(Pay_Submit).pay_and_submit</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line67">67</a>   b =@browser.title</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line68">68</a>   puts b</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line69">69</a>   sleep (5)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line70">70</a>   c= @browser.title</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line71">71</a>   puts c</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line72">72</a> end</pre></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Generated on 2016-05-26 11:24:26 -0400 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+
+  </body>
+</html>

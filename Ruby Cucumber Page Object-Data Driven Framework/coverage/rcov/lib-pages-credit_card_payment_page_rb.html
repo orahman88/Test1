@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>lib/pages/credit_card_payment_page.rb</title>
+    <link href="./assets/0.2.3/screen.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="./assets/0.2.3/print.css" media="print" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="./assets/0.2.3/rcov.js"></script>
+  </head>
+  <body>
+    <h1>Elis2 pageobject data driven framework C0 Coverage Information - Simploco - RCov</h1>
+    <h2>lib/pages/credit_card_payment_page.rb</h2>
+
+    <div class="report_table_wrapper">
+      <table class='report' id='report_table'>
+        <thead>
+          <tr>
+            <th class="left_align">Name</th>
+            <th class="right_align">Total Lines</th>
+            <th class="right_align">Lines of Code</th>
+            <th class="left_align">Total Coverage</th>
+            <th class="left_align">Code Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left_align"><a href="lib-pages-credit_card_payment_page_rb.html">lib/pages/credit_card_payment_page.rb</a></td>
+            <td class='right_align'><tt>44</tt></td>
+            <td class='right_align'><tt>31</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>68.18%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:68px"></div>
+        <div class="uncovered" style="width:32px"></div>
+      </div></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>54.84%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:55px"></div>
+        <div class="uncovered" style="width:45px"></div>
+      </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Key</h3>
+
+    <div class="key"><pre><span class='marked'>Code reported as executed by Ruby looks like this...</span><span class='marked1'>and this: this line is also marked as covered.</span><span class='inferred'>Lines considered as run by rcov, but not reported by Ruby, look like this,</span><span class='inferred1'>and this: these lines were inferred by rcov (using simple heuristics).</span><span class='uncovered'>Finally, here's a line marked as not executed.</span></pre></div>
+
+    <h3>Coverage Details</h3>
+
+    <table class="details">
+      <tbody>
+        <tr class="marked">
+          <td><pre><a name="line2">2</a> class CreditCardPaymentPage &lt;GenericBasePage</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line3">3</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line4">4</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line5">5</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line6">6</a>   element(:country_of_CC){|b|b.select(id:&#39;country&#39;)}                       #country selection drop down</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line7">7</a>   element(:billingAddress){|b|b.text_field(id:&#39;billingAddress&#39;)}           #billing address text field 1</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line8">8</a>   element(:billing_Address2){|b|b.text_field(id:&#39;billingAddress2&#39;)}        #billing address text filed 2</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line9">9</a>   element(:billing_city){|b|b.text_field(id:&#39;city&#39;)}                       #City text filed</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line10">10</a>   element(:state_Text){|b|b.select(id:&#39;statesUSA&#39;)}                        #state selection drop down</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line11">11</a>   element(:zip_Code){|b|b.text_field(id:&#39;zipPostalCode&#39;)}                  #zip code text field</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line12">12</a>   element(:account_HolderName){|b|b.text_field(id:&#39;accountHolderName&#39;)}    #account holder name text field</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line13">13</a>   element(:card_Type){|b|b.select(id:&#39;cardType&#39;)}                          #card type selection drop down option</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line14">14</a>   element(:expiration_Month){|b|b.select(id:&#39;expirationMonth&#39;)}            #card expiration date drop down</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line15">15</a>   element(:expiration_Year){|b|b.select(id:&#39;expirationYear&#39;)}              #card expiration year drop down</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line16">16</a>   element(:account_Number){|b|b.text_field(id:&#39;accountNumber&#39;)}            #account number text field</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line17">17</a>   element(:previous_Button){|b|b.link(id:&#39;previousButton&#39;)}                #privious button</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line18">18</a>   element(:cancel_Button){|b|b.link(id:&#39;cancelButton&#39;)}                    #cancel button</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line19">19</a>   element(:continue_button){|b|b.span(class:&#39;redbuttontext&#39;)}              #continue button</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line20">20</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line21">21</a> #-----------------This method fills up credit card information using using excel-----------------------------------</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line22">22</a>   def fillup_craditcard_payment_info</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line23">23</a>     dir_to_excel = Dir.pwd + &#39;/lib/config/data&#39;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line24">24</a>     read_workbook = RubyXL::Parser.parse(&quot;#{dir_to_excel}/ELIS_External_Test_Data.xlsx&quot;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line25">25</a>     worksheet = read_workbook[&#39;Credit_card_payment_info&#39;]</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line26">26</a>     country_of_CC.when_present.select worksheet[1][0].value</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line27">27</a>     billingAddress.when_present.set worksheet[1][1].value</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line28">28</a>     billing_city.when_present.set worksheet[1][2].value</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line29">29</a>     state_Text.when_present.select worksheet[1][3].value</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line30">30</a>     zip_Code.when_present.set worksheet[1][4].value</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line31">31</a>     account_HolderName.when_present.set worksheet[1][5].value</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line32">32</a>     card_Type.when_present.select worksheet[1][6].value</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line33">33</a>     expiration_Month.when_present.select worksheet[1][7].value</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line34">34</a>     expiration_Year.when_present.select worksheet[1][8].value</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line35">35</a>     account_Number.when_present.set worksheet[1][9].value</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line36">36</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line37">37</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line38">38</a> #---------------This method clicks on continue button-----------------------------------</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line39">39</a> def conitnue_payment</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line40">40</a>   continue_button.when_present.click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line41">41</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line42">42</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line43">43</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line44">44</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line45">45</a> end</pre></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Generated on 2016-07-22 09:55:52 -0400 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+
+  </body>
+</html>

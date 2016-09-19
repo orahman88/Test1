@@ -1,0 +1,12 @@
+default: --no-source --color BROWSER=chrome --format pretty  --format html --out results.html --format json --out reports.json
+
+
+
+
+
+
+
+
+
+#default: --no-source --color BROWSER=ff --format PrettyFace::Formatter::Html --out index.html --format json --out reports.json
+

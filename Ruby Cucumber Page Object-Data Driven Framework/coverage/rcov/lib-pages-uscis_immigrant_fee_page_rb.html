@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>lib/pages/uscis_immigrant_fee_page.rb</title>
+    <link href="./assets/0.2.3/screen.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="./assets/0.2.3/print.css" media="print" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="./assets/0.2.3/rcov.js"></script>
+  </head>
+  <body>
+    <h1>Elis2 pageobject data driven framework C0 Coverage Information - Simploco - RCov</h1>
+    <h2>lib/pages/uscis_immigrant_fee_page.rb</h2>
+
+    <div class="report_table_wrapper">
+      <table class='report' id='report_table'>
+        <thead>
+          <tr>
+            <th class="left_align">Name</th>
+            <th class="right_align">Total Lines</th>
+            <th class="right_align">Lines of Code</th>
+            <th class="left_align">Total Coverage</th>
+            <th class="left_align">Code Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left_align"><a href="lib-pages-uscis_immigrant_fee_page_rb.html">lib/pages/uscis_immigrant_fee_page.rb</a></td>
+            <td class='right_align'><tt>43</tt></td>
+            <td class='right_align'><tt>18</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>81.40%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:81px"></div>
+        <div class="uncovered" style="width:19px"></div>
+      </div></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>55.56%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:56px"></div>
+        <div class="uncovered" style="width:44px"></div>
+      </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Key</h3>
+
+    <div class="key"><pre><span class='marked'>Code reported as executed by Ruby looks like this...</span><span class='marked1'>and this: this line is also marked as covered.</span><span class='inferred'>Lines considered as run by rcov, but not reported by Ruby, look like this,</span><span class='inferred1'>and this: these lines were inferred by rcov (using simple heuristics).</span><span class='uncovered'>Finally, here's a line marked as not executed.</span></pre></div>
+
+    <h3>Coverage Details</h3>
+
+    <table class="details">
+      <tbody>
+        <tr class="marked">
+          <td><pre><a name="line2">2</a> class UscisImmigrantFeePage &lt; GenericBasePage</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line3">3</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line4">4</a>   element(:a_number_field) {|b| b.text_field(id: &quot;input_alienNum&quot;)}                        #A-number Field</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line5">5</a>   element(:dos_stateid_field) {|b| b.text_field(id: &quot;input_deptOfStateId&quot;)}                #DOS CaseID Field</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line6">6</a>   element(:add_button) {|b| b.span(class: &quot;glyphicon glyphicon-chevron-right ng-scope&quot;)}   #Add button</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line7">7</a>   element(:continue_button) {|b| b.button(id:&quot;continueBtn&quot;)}                               #Continue button</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line8">8</a>   element(:remove_button) {|b| b.button(id:&quot;removeButton0&quot;)}                               #Remove button</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line9">9</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line10">10</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line11">11</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line12">12</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line13">13</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line14">14</a> #----------Method to fill up A-number and DOS CaseID field --------------------------------------------------------------------</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line15">15</a>   def fillup_case_info</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line16">16</a>     dir_to_excel = Dir.pwd + &#39;/lib/config/data&#39;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line17">17</a>     read_workbook = RubyXL::Parser.parse(&quot;#{dir_to_excel}/Elis_Internal_Test_Data.xlsx&quot;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line18">18</a>     worksheet = read_workbook[&#39;Case_Info&#39;]</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line19">19</a>     a_number_field.when_present.set worksheet[1][1].value</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line20">20</a>     dos_stateid_field.when_present.set worksheet[1][0].value</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line21">21</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line22">22</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line23">23</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line24">24</a> #-------------Method to click on the Add button -----------------------------------------------------------------------------------</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line25">25</a>   def add_caseto_payee_table</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line26">26</a>     add_button.when_present.click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line27">27</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line28">28</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line29">29</a>   #-------------------Method clicks on continue button--------------------------------------------------------------------------------</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line30">30</a> def click_continue_button</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line31">31</a>   continue_button.when_present.click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line32">32</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line33">33</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line34">34</a> #------------Method Clicks on remove button--------------------------------------------------------------------------------------------</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line35">35</a>   def click_remove_button</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line36">36</a>     remove_button.when_present.click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line37">37</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line38">38</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line39">39</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line40">40</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line41">41</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line42">42</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line43">43</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line44">44</a> end</pre></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Generated on 2016-07-22 09:55:52 -0400 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+
+  </body>
+</html>
